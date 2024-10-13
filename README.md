@@ -2,6 +2,17 @@
 
 This repository contains an interactive visualization of top-selling small car sales trends in China from August 2021 to August 2024.
 
+## Note on Terminology
+In this project, "small cars" refers to what are commonly known as "小型车" or "A0级车" in the Chinese automotive market. This segment roughly corresponds to B-segment cars in Europe or subcompact cars in the United States. The A0 classification is specific to the Chinese market and represents compact to subcompact vehicles with the following typical characteristics:
+
+- Wheelbase: Between 2350mm and 2600mm
+- Vehicle length: Between 3700mm and 4450mm
+- Engine displacement: Typically between 1.0L and 1.5L for internal combustion engine vehicles
+
+For electric vehicles (EVs) in this category, while the size specifications remain similar, the classification is often based on battery capacity and range rather than engine displacement. EV models in this segment usually offer a range of approximately 200-400 kilometers on a single charge, though exact specifications can vary.
+
+It's worth noting that these classifications can be flexible and may evolve with market trends and technological advancements.
+
 ## Quick View
 中国小型车TOP车型销量走势 (2021年8月 - 2024年8月)
 

@@ -24,9 +24,9 @@ This visualization provides insights into the sales performance of various small
 Note: You'll need Python installed with pandas and plotly libraries.
 
 ## Data Source
-The car sales data used in this project is sourced from "车主之家" (www.16888.com) auto sales rankings. "车主之家" provides comprehensive automobile sales data, including brand sales, manufacturer sales, and sales by vehicle category. Please note that this data does not include imported car models and is for reference only. For official sales figures, please refer to the data published by automobile manufacturers.
+The car sales data used in this project is sourced from "车主之家" (www.16888.com) auto sales rankings. It provides comprehensive automobile sales data, including brand sales, manufacturer sales, and sales by vehicle category. Please note that this data does not include imported car models and is for reference only. For official sales figures, please refer to the data published by automobile manufacturers.
 
-Data source: ["车主之家" Auto Sales Rankings](https://xl.16888.com/)
+Data source: [Auto Sales Rankings - 车主之家](https://xl.16888.com/)
 
 ## Future Improvements
 - Expand the dataset to include other vehicle categories such as SUVs, sedans, etc.

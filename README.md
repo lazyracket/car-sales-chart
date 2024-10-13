@@ -3,6 +3,8 @@
 This repository contains an interactive visualization of top-selling small car sales trends in China from August 2021 to August 2024.
 
 ## Quick View
+中国小型车TOP车型销量走势 (2021年8月 - 2024年8月)
+
 You can view the interactive chart directly [here](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html).
 
 ## Repository Contents

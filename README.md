@@ -1,6 +1,6 @@
 # Chinese Small Car Sales Trend Visualization and Analysis
 
-This repository contains an interactive visualization of top-selling small car sales trends in China from August 2021 onwards, along with an automated data collection and storage system.
+This repository contains an interactive visualization of top-selling small car sales trends in China, with data ranging from January 2019 onwards, along with an automated data collection and storage system.
 
 ## Note on Terminology
 In this project, "small cars" refers to what are commonly known as "小型车" or "A0级车" in the Chinese automotive market. This segment roughly corresponds to B-segment cars in Europe or subcompact cars in the United States. The A0 classification is specific to the Chinese market and represents compact to subcompact vehicles with the following typical characteristics:
@@ -14,15 +14,23 @@ For electric vehicles (EVs) in this category, while the size specifications rema
 It's worth noting that these classifications can be flexible and may evolve with market trends and technological advancements.
 
 ## Quick View
-中国小型车TOP车型销量走势 (2021年8月起)
+中国小型车TOP车型销量走势
 
 You can view the data in two formats:
 
-1. Interactive Chart: View the interactive visualization [here](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html). Please note that this chart will no longer be updated.
+1. Interactive Chart: View the interactive visualization [here](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html). This chart displays data from August 2021 to August 2024 and will no longer be updated.
 
-2. Notion Database: Access the raw data and additional visualizations in our Notion database titled "Chinese Small Car Sales Trend Visualization (2021.08+)" [here](https://lazyracket.notion.site/120b6dc4e01481b9a605c7ec5c91742c?v=120b6dc4e01481329ab3000c002402c1). This database will be updated with the previous month's data around the 16th of each month.
+2. Notion Database: Access the raw data and additional visualizations in our Notion database titled "Chinese Small Car Sales Trend Visualization (2019.01+)" [here](https://lazyracket.notion.site/120b6dc4e01481b9a605c7ec5c91742c?v=120b6dc4e01481329ab3000c002402c1). This database contains data from January 2019 onwards and will be updated with the latest data around the 16th of each month.
 
 The Notion database provides a more detailed view of the data, including tables and various chart options for analysis.
+
+## Data Coverage
+
+- CSV File (`chinese_small_car_sales_rankings_2019_2024.csv`): Contains data from January 2019 to August 2024.
+- Interactive Chart (`small-car-topsales-cn.html` and [online version](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html)): Displays data from August 2021 to August 2024 for a more focused recent trend analysis.
+- Notion Database: Includes all data from January 2019 onwards and will be continuously updated.
+
+The interactive chart focuses on the most recent 3 years of data for clarity and conciseness, while the full dataset is available in the CSV file and Notion database for more comprehensive analysis.
 
 ## Project Structure and Data Update Mechanism
 

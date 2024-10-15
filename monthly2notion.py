@@ -45,14 +45,33 @@ df = pd.DataFrame(data, columns=['月份', '排名', '车型', '销量', '厂商
 
 # 定义写入 Notion 数据库的函数
 def write_to_notion_database(df):
-    url = "https://api.notion.com/v1/pages"
+    url = "https://api.notion.com/v1/databases/{}/query".format(DATABASE_ID)
     headers = {
         "Authorization": f"Bearer {NOTION_API_KEY}",
         "Content-Type": "application/json",
         "Notion-Version": "2022-06-28"
     }
-    
+
     for _, row in df.iterrows():
+        # 检查是否已存在相同记录
+        query = {
+            "filter": {
+                "and": [
+                    {"property": "月份", "number": {"equals": row['月份']}},
+                    {"property": "排名", "number": {"equals": int(row['排名'])}},
+                    {"property": "车型", "title": {"equals": row['车型']}}
+                ]
+            }
+        }
+        response = requests.post(url, headers=headers, json=query)
+        existing_records = response.json().get('results', [])
+
+        if existing_records:
+            print(f"记录已存在，跳过: 月份 {row['月份']}, 排名 {row['排名']}, 车型 {row['车型']}")
+            continue
+
+        # 如果记录不存在，则添加新记录
+        create_url = "https://api.notion.com/v1/pages"
         data = {
             "parent": {"database_id": DATABASE_ID},
             "properties": {
@@ -65,11 +84,11 @@ def write_to_notion_database(df):
             }
         }
         
-        response = requests.post(url, headers=headers, json=data)
+        response = requests.post(create_url, headers=headers, json=data)
         if response.status_code != 200:
-            print(f"Error adding row {row['排名']}: {response.text}")
+            print(f"添加记录时出错 {row['排名']}: {response.text}")
         else:
-            print(f"Successfully added row {row['排名']}")
+            print(f"成功添加记录 {row['排名']}")
 
 # 调用函数将数据写入Notion数据库
 write_to_notion_database(df)

@@ -84,11 +84,12 @@ def write_to_notion_database(df):
             }
         }
         
-        response = requests.post(create_url, headers=headers, json=data)
-        if response.status_code != 200:
-            print(f"添加记录时出错 {row['排名']}: {response.text}")
-        else:
-            print(f"成功添加记录 {row['排名']}")
+        try:
+            response = requests.post(create_url, headers=headers, json=data)
+            response.raise_for_status()
+            print(f"成功添加记录: 月份 {row['月份']}, 排名 {row['排名']}, 车型 {row['车型']}")
+        except requests.RequestException as e:
+            print(f"添加记录时出错 {row['排名']}: {e}")
 
 # 调用函数将数据写入Notion数据库
 write_to_notion_database(df)

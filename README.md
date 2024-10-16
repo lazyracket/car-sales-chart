@@ -60,13 +60,19 @@ This approach maintains a static display of historical data while ensuring conti
 Note: You'll need Python installed with pandas, plotly, requests, and beautifulsoup4 libraries.
 
 ## Data Source
-The car sales data used in this project is sourced from "车主之家" (www.16888.com) auto sales rankings. It provides comprehensive automobile sales data, including brand sales, manufacturer sales, and sales by vehicle category. The website updates the previous month's sales data around the 15th of each month. Our script then scrapes this updated data and adds it to the Notion database.
+The car sales data used in this project is sourced from "车主之家" (www.16888.com) auto sales rankings. We extend our sincere gratitude to 车主之家 for providing this valuable public data resource. The website offers comprehensive automobile sales data, including brand sales, manufacturer sales, and sales by vehicle category, which greatly supports automotive market research.
 
 Data source: [Auto Sales Rankings - 车主之家](https://xl.16888.com/)
 
-The website selects the top 10-15 models by monthly sales. This means the list of featured models may change over time, with some models dropping off the list and new bestsellers being added. Please note that this data does not include imported car models and is for reference only. For official sales figures, please refer to the data published by automobile manufacturers.
+This project uses automated scripts to collect these publicly available data, aiming to present and analyze the information in new ways, offering additional perspectives for automotive market research. Throughout the process, the utmost respect is maintained for the original data source.
 
-It's important to note that while we strive for accuracy, these data should be considered unofficial and may differ from figures provided by manufacturers or official industry bodies. This project aims to provide an overview of general trends rather than precise sales figures.
+The website selects the top 10-15 models by monthly sales. This means the list of featured models may change over time, with some models dropping off the list and new bestsellers being added. The data collection process follows the website's update schedule, typically retrieving the previous month's latest data around the 15th of each month.
+
+It's important to note that while striving for accuracy, these data should be considered unofficial and may differ from figures provided by manufacturers or official industry bodies. This project aims to provide an overview of general trends rather than precise sales figures.
+
+**Usage Note**: All data collected and presented in this project is for academic research purposes only. When citing this data in research, it is recommended to also reference the original data source. For scenarios requiring official sales figures, please refer to the information published by automobile manufacturers.
+
+By responsibly using and sharing this public data, the project hopes to contribute to research and analysis in the automotive industry while expressing appreciation for the original data providers.
 
 ## Future Improvements
 - Expand the dataset to include other vehicle categories such as SUVs, sedans, etc.

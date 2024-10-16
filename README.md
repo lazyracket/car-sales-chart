@@ -14,8 +14,6 @@ For electric vehicles (EVs) in this category, while the size specifications rema
 It's worth noting that these classifications can be flexible and may evolve with market trends and technological advancements.
 
 ## Quick View
-中国小型车TOP车型销量走势
-
 You can view the data in two formats:
 
 1. Interactive Chart: View the interactive visualization [here](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html). This chart displays data from August 2021 to August 2024 and will no longer be updated.

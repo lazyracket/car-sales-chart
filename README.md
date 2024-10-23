@@ -18,7 +18,7 @@ You can view the data in two formats:
 
 1. Interactive Chart: View the interactive visualization [here](https://lazyracket.github.io/car-sales-chart/small-car-topsales-cn.html). This chart displays data from August 2021 to August 2024 and will no longer be updated.
 
-2. Notion Database: Access the raw data and additional visualizations in our Notion database titled "Chinese Small Car Sales Trend Visualization (2019.01+)" [here](https://lazyracket.notion.site/120b6dc4e01481b9a605c7ec5c91742c?v=120b6dc4e01481329ab3000c002402c1). This database contains data from January 2019 onwards and will be updated with the latest data around the 16th of each month.
+2. Notion Database: Access the raw data and additional visualizations in our Notion database titled "Chinese Small Car Sales Trend Visualization (2019.01+)" [here](https://lazyracket.notion.site/120b6dc4e01481b9a605c7ec5c91742c?v=120b6dc4e01481329ab3000c002402c1&pvs=4). This database contains data from January 2019 onwards and will be updated with the latest data around the 16th of each month.
 
 The Notion database provides a more detailed view of the data, including tables and various chart options for analysis.
 
